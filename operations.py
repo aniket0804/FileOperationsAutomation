@@ -66,7 +66,7 @@ def removefile(ip,filename):
 #Running Servlet For Pre-Process all.csv
 def servlet_run(ip,port,action,path):
     try:
-        endurl = "http://" + ip + ":" + port + "/Service/" + action + ".jsp?dir=" + path + "&updateNumberType=true"
+        endurl = "http://" + ip + ":" + port + "/Service/" + action + ".jsp?dir=" + path
         print endurl
         resp = urllib2.urlopen(endurl)
         if resp.getcode() == 200:
